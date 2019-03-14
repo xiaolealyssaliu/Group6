@@ -1,2 +1,2 @@
-READ me file
+# Group 6
 
