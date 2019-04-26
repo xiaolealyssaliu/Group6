@@ -10,6 +10,7 @@ import class_character
 def get_result(lyrics_directory):
 
 	lyrics = os.listdir(lyrics_directory)
+	lyrics = sorted(lyrics)
 	result = []
 	for i in lyrics:
 		if i[-4:] == '.txt':
@@ -18,6 +19,8 @@ def get_result(lyrics_directory):
 				data = fp.read()
 			character = class_character.get_character(i, data)
 			result.append(character)
+	print(result)
+
 	return result
 
 
