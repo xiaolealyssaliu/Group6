@@ -1,0 +1,9 @@
+Requirements:
+
+Python package textstat is required to get the complexity scores.
+Installation: pip install textstat
+Usage: textstat.flesch_reading_ease(text) returns the Flesch Reading Ease Score, which need normalization for this project.
+For more information: https://pypi.org/project/textstat/
+
+
+
