@@ -4,6 +4,7 @@
 import os
 import re
 import random
+import class_character
 
 
 def get_result(lyrics_directory):
@@ -15,7 +16,7 @@ def get_result(lyrics_directory):
 			path = lyrics_directory + i
 			with open(path) as fp:
 				data = fp.read()
-			character = get_character(i)
+			character = class_character.get_character(i, data)
 			result.append(character)
 	return result
 
