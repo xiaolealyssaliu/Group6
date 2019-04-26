@@ -1,7 +1,10 @@
 #!/usr/bin/env python
 
-import random
+from textblob import TextBlob
 
 def mood(data):
-	return round(random.random(), 1)
+
+	m = TextBlob(data).sentiment[0]
+	m = round((m - (-1))/(1 - (-1)), 1) # normalize the scores
+	return m
 
