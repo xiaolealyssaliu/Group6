@@ -1,13 +1,26 @@
 Requirements:
 
+
 Python package textstat is required to get the complexity scores.
 Installation: pip install textstat
-Usage: textstat.flesch_reading_ease(text) returns the Flesch Reading Ease Score, which need normalization for this project.
+Usage: 
+import textstat
+textstat.flesch_reading_ease(text) returns the Flesch Reading Ease Score, which need normalization for this project.
 For more information: https://pypi.org/project/textstat/
 
-Python package TextBlob is required to get the mood scores.
-Installation: pip install -U textblob
-Usage: TextBlob(text).sentiment[0] returns the positive/negative scores between [-1, 1]
+
+Python package TextBlob is required to get the mood scores and kid_safe scores.
+Installation: 
+pip install -U textblob
+python -m textblob.download_corpora
+Usage: 
+from textblob import TextBlob
+import nltk
+nltk.download('stopwords')
+from nltk.corpus import stopwords
+TextBlob(text).sentiment[0] returns the positive/negative scores between [-1, 1]
+stopwords.words('english')
+TextBlob(text).words returns the tokenization.
 For more information: https://textblob.readthedocs.io/en/dev/
 
 
