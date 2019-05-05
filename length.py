@@ -11,6 +11,6 @@ def length(data):
     if count>divisor[9]:
         return values[10]
     for i in range(1,len(divisor)): 
-        if count/divisor[i]>=1 and count/divisor[i+1]<1: #if the word count is less than (i+1)-th divisor but greater or equal to the i-th divisor, score given will be the (i+1)-th value.
+        if count/divisor[i-1]>=1 and count/divisor[i]<1: #if the word count is less than (i+1)-th divisor but greater or equal to the i-th divisor, score given will be the (i+1)-th value.
             return values[i+1]
        
