@@ -5,7 +5,6 @@ def length(data):
     count=0
     for word in split_text:
         count=count+1
-    print(count)
     if count<divisor[0]: #if the length less than 80, all will be attributed to 0.0
         return values[0]
     if count>divisor[9]:
