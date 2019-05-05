@@ -1,5 +1,11 @@
-import main
+
+
+
+
+
+
 import unittest
+import love.py 
 class Test(unittest.TestCase):
     def test_kid_safe(self): #test for kid_safe
         word1='having sex should receive clear consent; otherwise, doing so may raise legal issues'
