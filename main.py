@@ -1,10 +1,10 @@
 #!/usr/bin/env python
 
-
 import os
 import re
 import random
 import class_character
+import json
 
 
 def get_result(lyrics_directory):
@@ -19,7 +19,8 @@ def get_result(lyrics_directory):
 				data = fp.read()
 			character = class_character.get_character(i, data)
 			result.append(character)
-	print(result)
+           
+	json.dumps(result)
 
 	return result
 
