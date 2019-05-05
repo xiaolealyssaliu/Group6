@@ -1,4 +1,3 @@
-#!/usr/bin/env python
 
 import os
 import re
@@ -34,5 +33,6 @@ if __name__ == '__main__':
 	args = parser.parse_args()
 
 	get_result(args.lyrics_directory)
+
 
 
