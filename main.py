@@ -21,7 +21,7 @@ def get_result(lyrics_directory):
 			result.append(character)
            
 	json.dumps(result)
-
+        print(result)
 	return result
 
 
