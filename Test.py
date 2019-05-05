@@ -1,4 +1,4 @@
-import main.py
+import main
 import unittest
 class Test(unittest.TestCase):
     def test_kid_safe(self): #test for kid_safe
@@ -11,7 +11,7 @@ class Test(unittest.TestCase):
         word3='I really really really like you. Wonder if you are the same.'
         self.assertEqual(love(word3),0.8)
         word4='Hatred is the thing causes inharmony and dispute.'
-        self.asserEqual(love(word4),0.0)
+        self.assertEqual(love(word4),0.0)
         
     def test_length(self): #test for length
         word5 ='it is a beautiful night'
