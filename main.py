@@ -18,11 +18,10 @@ def get_result(lyrics_directory):
 				data = fp.read()
 			character = class_character.get_character(i, data)
 			result.append(character)
-           
-	json.dumps(result)
 	print(result)
+	   
 	return result
-
+	
 
 if __name__ == '__main__':
 
