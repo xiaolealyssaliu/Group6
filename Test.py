@@ -1,3 +1,4 @@
+import main.py
 import unittest
 class Test(unittest.TestCase):
     def test_kid_safe(self): #test for kid_safe
