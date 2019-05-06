@@ -23,5 +23,11 @@ stopwords.words('english')
 TextBlob(text).words returns the tokenization.
 For more information: https://textblob.readthedocs.io/en/dev/
 
+Python package Coverage is required to get coverage for unittest.
+Installation:
+pip install coverage
+Usage:
+coverage run Test.py
+coverage report -m
 
 
