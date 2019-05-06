@@ -10,18 +10,18 @@ def get_result(lyrics_directory):
 	result = []
 	dada ={}
 	dada["characterizations"] = result
-	lyrics = os.listdir(lyrics_directory)
+	lyrics = os.listdir(lyrics_directory)				# get all the file names of lyrics as a list 
 	lyrics = sorted(lyrics)
 	for i in lyrics:
-		if i[-4:] == '.txt':
+		if i[-4:] == '.txt':					# confirm it is not a hidden file
 			path = lyrics_directory + i
-			with open(path) as fp:
+			with open(path) as fp:				# read the lyrics strings
 				data = fp.read()
-			character = class_character.get_character(i, data)
+			character = class_character.get_character(i, data)	# get the scores from class_character.py file
 			result.append(character)
-	dada["characterizations"] = sorted(dada["characterizations"], key = lambda i: i['id'])
+	dada["characterizations"] = sorted(dada["characterizations"], key = lambda i: i['id'])	# sort the result by id
 
-	print(json.dumps(obj=dada,indent=True))
+	print(json.dumps(obj=dada,indent=True))				# print as json format output
 
 	return json.dumps(obj=dada,indent = True)
 	

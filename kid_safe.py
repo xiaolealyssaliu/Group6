@@ -5,6 +5,7 @@ nltk.download('stopwords')
 from nltk.corpus import stopwords
 from textblob import TextBlob
 
+# arrBad is the bad word dictionary
 arrBad = [
 '2g1c',
 '2 girls 1 cup',
@@ -356,8 +357,8 @@ def kid_safe(data):
 		data = data.replace(pull_char, '')
 	stop = stopwords.words('english')
 	data = " ".join(word for word in data.split() if word not in stop)
-	data = TextBlob(data).words
-	bw = [1 if i.lower() in arrBad else 0 for i in data]
+	data = TextBlob(data).words		# get the tokens
+	bw = [1 if i.lower() in arrBad else 0 for i in data]		# get the frequency of the bad word occurrence
 	k = sum(bw)/len(data)
 	k = 1 - k / 0.13		#normalize the score
 	k = k // 0.1 / 10		#round to 1 digit

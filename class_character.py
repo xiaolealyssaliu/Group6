@@ -11,6 +11,8 @@ import complexity
 
 class Characterization:
 	
+	# value attribute of the class
+
 	id_ = 0
 	artist = " "
 	title = " "
@@ -24,6 +26,8 @@ class Characterization:
 
 	def __init__(self, lyric):
 		self.lyric = lyric
+
+	# get the values by the methods in each .py file
 
 	def id_(self):
 		self.id_ = id_.id_(self.lyric)
@@ -49,11 +53,13 @@ class Characterization:
 	def complexity(self, data):
 		self.complexity = complexity.complexity(data)
 
+	# get the total characterization of the lyrics
 	def get_characterization(self):
 		self.characterization = {"id": self.id_, "artist": self.artist, "title": self.title, "kid_safe": self.kid_safe,
 					"love": self.love, "mood": self.mood, "length": self.length, "complexity": self.complexity}
 
 def get_character(lyric, data):
+	# process the class to get the characterization result
 	c = Characterization(lyric)
 	c.id_()
 	c.artist()

@@ -3,8 +3,8 @@
 import re
 
 def id_(lyric):
-	pattern = r'^\d+'
+	pattern = r'^\d+'				# extract the id information from the file name
 	match = re.search(pattern, lyric)
-	id_ = int(match.group(0))
+	id_ = int(match.group(0))			# change to integer type
 	return id_
 
