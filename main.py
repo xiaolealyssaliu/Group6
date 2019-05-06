@@ -7,7 +7,8 @@ import json
 
 
 def get_result(lyrics_directory):
-
+	dada ={}
+	dada["characterizations"] = result
 	lyrics = os.listdir(lyrics_directory)
 	lyrics = sorted(lyrics)
 	result = []
@@ -18,9 +19,9 @@ def get_result(lyrics_directory):
 				data = fp.read()
 			character = class_character.get_character(i, data)
 			result.append(character)
-	print(result)
+	print(dada)
 	   
-	return result
+	return dada
 	
 
 if __name__ == '__main__':
