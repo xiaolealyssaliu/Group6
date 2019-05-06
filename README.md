@@ -17,7 +17,7 @@ Complexity: We Use textstat package to determine the readability of the lyrics. 
 Kid_Safe: We Use textblob to get rid of stop word. Given a prefixed set of dirty words, the higher score indicates fewer use of the words. We then normalize the score to 0 to 1.
 
 Where to get it:
-The Sourcecode is currently hold on GitHub at: git@github.com:xiaolealyssaliu/Group6.git
+The Sourcecode is currently hold on GitHub at: git@github.com: xiaolealyssaliu/Group6.git
 
 
 
