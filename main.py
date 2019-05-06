@@ -19,9 +19,11 @@ def get_result(lyrics_directory):
 				data = fp.read()
 			character = class_character.get_character(i, data)
 			result.append(character)
-	print(dada)
-	   
-	return dada
+	dada["characterizations"] = sorted(dada["characterizations"], key = lambda i: i['id'])
+
+	print(json.dumps(obj=dada,indent=True))
+
+	return json.dumps(obj=dada,indent = True)
 	
 
 if __name__ == '__main__':
