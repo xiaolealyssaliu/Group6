@@ -2,8 +2,11 @@
 Group 6: Content Intended for Tools for Analytics Class
 zz2570, xl2863
 
-What is it?
+Usage:
+The code can be initiated by input the follwing in the command line:
+python main.py Lyrics/
 
+What is it?
 This set of code extracts the given information from the songs and lyrics, including its name, id and singer. At the same time, the code contains analysis on the lyrics (contents).It aims to generate a separate score (from 0.0 to 1.0 with step 0.1) in terms of its length, mood, kid-safety,love expressions and choice of vocalulary.
 
 Main Features and algorithm explanation:
@@ -17,7 +20,7 @@ Complexity: We Use textstat package to determine the readability of the lyrics. 
 Kid_Safe: We Use textblob to get rid of stop word. Given a prefixed set of dirty words, the higher score indicates fewer use of the words. We then normalize the score to 0 to 1.
 
 Where to get it:
-The Sourcecode is currently hold on GitHub at: git@github.com: xiaolealyssaliu/Group6.git
+The Sourcecode is currently hold on GitHub at: git@github.com:xiaolealyssaliu/Group6.git
 
 
 
