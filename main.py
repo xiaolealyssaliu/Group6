@@ -7,11 +7,11 @@ import json
 
 
 def get_result(lyrics_directory):
+	result = []
 	dada ={}
 	dada["characterizations"] = result
 	lyrics = os.listdir(lyrics_directory)
 	lyrics = sorted(lyrics)
-	result = []
 	for i in lyrics:
 		if i[-4:] == '.txt':
 			path = lyrics_directory + i
