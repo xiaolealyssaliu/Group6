@@ -20,6 +20,8 @@ Complexity: We Use textstat package to determine the readability of the lyrics. 
 
 Kid_Safe: We Use textblob to get rid of stop word. Given a prefixed set of dirty words, the higher score indicates fewer use of the words. We then normalize the score to 0 to 1.
 
+Complexity: The code uses the package of "textstat" to get the Flesch reading-ease test. In the Flesch reading-ease test, higher scores indicate material that is easier to read; lower numbers mark passages that are more difficult to read. So the code then scale the Flesch scores to fall down in range [0, 1] and inverse to "lower means easy" as required.
+
 Where to get it:
 The Sourcecode is currently hold on GitHub at: git@github.com:xiaolealyssaliu/Group6.git
 
