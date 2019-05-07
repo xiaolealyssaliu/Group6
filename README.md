@@ -1,4 +1,5 @@
 
+
 Group 6: Content Intended for Tools for Analytics Class
 zz2570, xl2863
 
@@ -27,7 +28,7 @@ Complexity: The code uses the package of "textstat" to get the Flesch reading-ea
 
 Where to get it:
 The Sourcecode is currently hold on GitHub at: git@github.com:xiaolealyssaliu/Group6.git
-
+https://github.com/xiaolealyssaliu/Group6.git
 
 
 
