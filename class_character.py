@@ -21,6 +21,8 @@ class Characterization:
 	mood = 0
 	length = 0
 	complexity = 0
+	
+	# initial the characterization as well as set as an attribute
 	characterization = {"id": id_, "artist": artist, "title": title, "kid_safe": kid_safe,
 			"love": love, "mood": mood, "length": length, "complexity": complexity}
 
